@@ -12,4 +12,12 @@ softwareButton.addEventListener('click', function() {
     list.classList.toggle("show");
 })
 
+const othersButton = document.getElementById("others");
+
+othersButton.addEventListener('click', function() {
+    const list = document.querySelector(".others_list");
+    list.classList.toggle("show");
+})
+
+
 
