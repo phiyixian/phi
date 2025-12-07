@@ -40,15 +40,19 @@ body {
     flex-direction: row;
     justify-content: center;
     align-items: center;
+    cursor: pointer;
 }
 
 .logo {
     flex: 0.5;
     padding-right: 20px;
+    cursor: pointer;
 }
 
 .msg {
     flex: 5;
+    cursor: pointer;
+    z-index: 10;
 }
 
 .gap {
@@ -79,9 +83,9 @@ body {
     display: flex;
     flex-direction: row;
     justify-content: center;
-    padding: 20px;
     flex-wrap: wrap;
-    margin: auto;
+    width: 100%;
+    margin: 0;
 }
 
 .project {
@@ -89,8 +93,9 @@ body {
     display: flex;
     margin: 10px;
     flex-direction: row;
-    min-width: 500px;
-    max-width: 600px;
+    width: 90%;
+    max-width: 500px;
+    min-width: 250px;
     background-color: rgb(226, 226, 226);
     border-radius: 20px;
     z-index: 1;
@@ -127,11 +132,12 @@ h2{
 i {
     font-size: 12px;
     margin-top: -10;
+    padding-bottom: 30px;
 }
 
 .project img {
     border-radius: 20px;
-    object-fit: contain;
+    object-fit: cover;
 }
 
 .intro {
@@ -179,6 +185,19 @@ i {
     text-align: center;
 }
 
+.hardware_projects,
+.software_projects {
+    display: none;
+}
+
+.hardware_projects.show,
+.software_projects.show {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
 .software_list.show p{
     margin: 5px;
 }
@@ -197,8 +216,16 @@ i {
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
-    padding: 30px;
     min-height: 270px;
+    min-width: 90vw;
+}
+
+.skills_top{
+    margin-top: 50px;
+}
+
+.oth {
+    min-width: 90vw;
 }
 
 button {
@@ -225,6 +252,59 @@ button:hover{
 .exp {
     margin-top: 30px;
 }
+
+.project_buttons {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.hardware_skill,
+.software_skill{
+    margin-top: 20px;
+}
+
+.experiences {
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    justify-content: center;
+    margin: auto;
+}
+
+.experience{
+    margin: 20px;
+    min-width: 300px;
+    max-width: 700px;
+    width: 80vw;
+    background-color: rgb(226, 226, 226);
+    border-radius: 20px;
+    z-index: 1;
+    box-shadow: 5px 5px 0px rgba(0, 0, 0, 0.3);
+
+    display: flex;
+    flex-direction: row;
+    padding: 20px;
+    align-items: center;
+}
+
+.experience img {
+    width: 200px;
+    height: 200px;
+    border-radius: 20px;
+    object-fit: cover;
+}
+
+.desc {
+    margin: 10px;
+}
+
+.desc h5{
+    margin: 0px;
+    padding: 0px;
+}
+
 @media screen and (max-width: 768px) {
     .projects {
         display: flex;
