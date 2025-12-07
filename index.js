@@ -1,5 +1,5 @@
-const hardwareprojects = document.querySelector(".hardware_projects");
-hardwareprojects.classList.toggle("show");
+const softwareprojects = document.querySelector(".software_projects");
+softwareprojects.classList.toggle("show");
 
 const hardwareButton = document.getElementById("hardware");
 

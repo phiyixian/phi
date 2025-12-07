@@ -275,7 +275,7 @@ button:hover{
 
 .experience{
     margin: 20px;
-    min-width: 300px;
+    min-width: 200px;
     max-width: 700px;
     width: 80vw;
     background-color: rgb(226, 226, 226);
@@ -318,9 +318,23 @@ button:hover{
     }
 
     .project {
-        margin: 20px;
+        margin: 5px;
         display: flex;
         flex-direction: column;
         min-width: 60vw;
     }
+
+    .experience{
+    margin: 5px;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    align-items: center;
+}
+
+.hardware_projects,
+.software_projects {
+    margin-top: 20px;
+}
+
 }
